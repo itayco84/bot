@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="he">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>הכנות לשיעור</title>
+</head>
+<body>
+    <h2>בדיקת הכנות לשיעור</h2>
+    <form method="POST">
+        <label for="lesson">שם השיעור:</label>
+        <input type="text" id="lesson" name="lesson" required>
+        <button type="submit">בדוק</button>
+    </form>
+
+    {% if lesson_info %}
+        <p><strong>תוצאה:</strong> {{ lesson_info }}</p>
+    {% endif %}
+</body>
+</html>
